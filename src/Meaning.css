@@ -1,7 +1,10 @@
 .Meaning {
-  text-transform: capitalize;
+  text-align: left;
+}
+.Meaning h3 {
+  color: #5dacbd;
 }
 
-.Meaning h4 {
-  text-align: left;
+.Meaning em {
+  color: rgba(39, 33, 66, 0.4);
 }

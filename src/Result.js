@@ -4,7 +4,6 @@ import Meaning from "./Meaning";
 
 export default function Result(props) {
   if (props.data) {
-    // let definition = props.data.meanings[0].definitions[0].definition;
     return (
       <div className="Result">
         <h2>{props.data.word}</h2>

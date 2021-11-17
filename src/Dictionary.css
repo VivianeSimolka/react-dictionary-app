@@ -1,21 +1,29 @@
-.Dictionary {
+.Dictionary section {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  max-width: 600px;
+  margin: 16px auto;
+}
+.Dictionary .word {
   text-align: center;
-  padding: 20px;
+}
+.Dictionary h3 {
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .Dictionary form {
   margin-top: 5px;
+}
 
-  padding-bottom: 30px;
+.Dictionary .Result h2 {
+  text-transform: capitalize;
+  color: #24527a;
+  padding-top: 10px;
 }
-.App form.btn {
-  background: #5dacbd;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 15px 0;
-  border: none;
-  height: 50px;
-}
+
 .Dictionary form .search-input {
   background: #edf8f8;
   border: none;
@@ -30,6 +38,28 @@
 .Dictionary form .form-control:focus {
   background: #edf8f8;
 }
-.Dictionary form .icon {
-  max-height: 70px;
+.Dictionary input {
+  width: 100%;
+}
+.Dictionary .hint {
+  font-size: 11px;
+  margin-top: 16px;
+  color: rgba(39, 33, 66, 0.4);
+  text-transform: inherit;
+}
+.Dictionary a {
+  text-decoration: none;
+  color: #5dacbd;
+  transition: ease-in-out 200ms;
+}
+
+.Dictionary a:hover {
+  color: #24527a;
+}
+.Dictionary .Meaning ul {
+  padding: 0;
+}
+.Dictionary .Meaning li {
+  list-style: none;
+  display: inline-block;
 }

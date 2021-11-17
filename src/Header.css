@@ -1,10 +1,10 @@
 .Header {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 18px;
   text-align: center;
   color: #5dacbd;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  padding: 30px;
+  margin-top: 20px;
 }
 .Header .icon {
   max-height: 70px;

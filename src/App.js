@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Header";
 import Footer from "./Footer";
+import Header from "./Header";
 import Dictionary from "./Dictionary";
 import "./App.css";
 
@@ -10,7 +10,7 @@ export default function App() {
       <div className="container">
         <Header />
         <main>
-          <Dictionary />
+          <Dictionary defaultWord="Giraffe" />
         </main>
         <Footer />
       </div>

@@ -3,9 +3,10 @@ import axios from "axios";
 import "./Dictionary.css";
 import Result from "./Result";
 
-export default function Dictionary() {
-  let [word, setWord] = useState("");
+export default function Dictionary(props) {
+  let [word, setWord] = useState(props.defaultWord);
   let [apiInput, setApiInput] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function updateWord(event) {
     setWord(event.target.value);
@@ -14,25 +15,40 @@ export default function Dictionary() {
     setApiInput(response.data[0]);
   }
 
-  function search(event) {
-    event.preventDefault();
+  function search() {
     let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
     axios.get(apiURL).then(handleResponse);
   }
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
 
-  return (
-    <div className="Dictionary">
-      <form onSubmit={search} autoFocus="on">
-        <input
-          type="search"
-          autoFocus={true}
-          className="form-control search-input"
-          placeholder="Please type a word"
-          autoComplete="off"
-          onChange={updateWord}
-        />
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  if (loaded) {
+    return (
+      <div className="Dictionary">
+        <section>
+          <form onSubmit={handleSubmit} autoFocus="on">
+            <input
+              type="search"
+              autoFocus={true}
+              className="form-control search-input"
+              placeholder="Please type a word"
+              autoComplete="off"
+              onChange={updateWord}
+            />
+          </form>
+          <div className="hint">Suggestion: giraffe, pizza, wine...</div>
+        </section>
         <Result data={apiInput} />
-      </form>
-    </div>
-  );
+      </div>
+    );
+  } else {
+    load();
+  }
 }

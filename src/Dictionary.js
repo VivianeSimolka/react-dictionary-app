@@ -33,6 +33,7 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
+          <h1>What word do you want to search?</h1>
           <form onSubmit={handleSubmit} autoFocus="on">
             <input
               type="search"
@@ -43,7 +44,7 @@ export default function Dictionary(props) {
               onChange={updateWord}
             />
           </form>
-          <div className="hint">Suggestion: giraffe, pizza, wine...</div>
+          {/*          <div className="hint">Suggestion: giraffe, pizza, wine...</div> */}
         </section>
         <Result data={apiInput} />
       </div>

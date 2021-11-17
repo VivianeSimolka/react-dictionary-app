@@ -1,10 +1,16 @@
 .Dictionary section {
   background: white;
-  padding: 24px;
+  padding: 36px;
   border-radius: 8px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
-  max-width: 700px;
+  max-width: 800px;
   margin: 16px auto;
+}
+
+.Dictionary h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .Dictionary h3 {
@@ -22,8 +28,8 @@
   padding: 15px 20px;
   display: inline-block;
   border-radius: 6px;
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 16px;
+  color: #24527a;
+  font-size: 20px;
   height: 50px;
   line-height: 20px;
 }
@@ -34,16 +40,9 @@
   width: 100%;
 }
 .Dictionary .hint {
-  font-size: 11px;
+  font-size: 16px;
   margin-top: 16px;
-  color: rgba(39, 33, 66, 0.4);
+  color: #24527a;
+  opacity: 0.5;
   text-transform: inherit;
-}
-
-.Dictionary .Meaning ul {
-  padding: 0;
-}
-.Dictionary .Meaning li {
-  list-style: none;
-  display: inline-block;
 }

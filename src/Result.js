@@ -8,13 +8,16 @@ export default function Result(props) {
     return (
       <div className="Result">
         <h2>{props.data.word}</h2>
-        {props.data.phonetics.map(function (phonetic, index) {
-          return (
-            <div key={index}>
-              <Phonetic phonetic={phonetic} />
-            </div>
-          );
-        })}
+        <a
+          href={props.data.phonetics[0].audio}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Listen
+        </a>
+        <br />
+        {props.data.phonetics[0].text}
+        <br />
         {props.data.meanings.map(function (meaning, index) {
           return (
             <div key={index}>

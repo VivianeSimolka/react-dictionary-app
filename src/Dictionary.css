@@ -3,12 +3,10 @@
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
-  max-width: 600px;
+  max-width: 700px;
   margin: 16px auto;
 }
-.Dictionary .word {
-  text-align: center;
-}
+
 .Dictionary h3 {
   text-align: center;
   text-transform: capitalize;
@@ -16,12 +14,6 @@
 
 .Dictionary form {
   margin-top: 5px;
-}
-
-.Dictionary .Result h2 {
-  text-transform: capitalize;
-  color: #24527a;
-  padding-top: 10px;
 }
 
 .Dictionary form .search-input {
@@ -47,15 +39,7 @@
   color: rgba(39, 33, 66, 0.4);
   text-transform: inherit;
 }
-.Dictionary a {
-  text-decoration: none;
-  color: #5dacbd;
-  transition: ease-in-out 200ms;
-}
 
-.Dictionary a:hover {
-  color: #24527a;
-}
 .Dictionary .Meaning ul {
   padding: 0;
 }

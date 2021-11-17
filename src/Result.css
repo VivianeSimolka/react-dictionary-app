@@ -1,5 +1,25 @@
+.Result a {
+  border: 1px solid #edf8f8;
+  text-decoration: none;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  transition: ease-in-out 200ms;
+  max-width: 36px;
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 6px 10px;
+  border-radius: 50px;
+}
+.Result a:hover {
+  background-color: #edf8f8;
+}
+
 .Result h2 {
   text-transform: capitalize;
   color: #24527a;
-  padding-top: 30px;
+}
+
+.Result .word {
+  text-align: center;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import "./Result.css";
 import Meaning from "./Meaning";
+import "./Result.css";
 
 export default function Result(props) {
   if (props.data) {
@@ -13,9 +13,8 @@ export default function Result(props) {
             target="_blank"
             rel="noreferrer"
           >
-            Listen
+            🔊
           </a>
-          <br />
           {props.data.phonetics[0].text}
         </section>
         {props.data.meanings.map(function (meaning, index) {

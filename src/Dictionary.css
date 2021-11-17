@@ -41,8 +41,7 @@
 }
 .Dictionary .hint {
   font-size: 16px;
-  margin-top: 16px;
   color: #24527a;
   opacity: 0.5;
-  text-transform: inherit;
+  text-align: center;
 }
